@@ -1,19 +1,20 @@
+import Hero from "./components/hero/Hero";
 import Layout from "./components/layout/Layout";
+import Projects from "./components/projects/Projects";
 import { ThemeContext } from "./components/theme/Theme"
 
 
 import { useContext } from 'react'
 
 const App = () => {
-  const [darkMode, toggleMode] = useContext(ThemeContext)
+  const [mode] = useContext(ThemeContext)
 
   return (
-    <div className={`${darkMode ? "dark" : ""}`}>
+    <div className={`${mode === "dark" ? "dark" : ""}`}>
       <Layout>
-        {/* <Hero />
-        <Projects/>
-        <Technologies /> */}
-        <h1>Test</h1>
+        <Hero />
+        <Projects />
+        {/* <Technologies /> */}
       </Layout>
     </div>
   );

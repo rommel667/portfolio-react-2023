@@ -8,19 +8,19 @@ interface ThemeProviderProps {
 
 const ThemeProvider: FC<ThemeProviderProps> = ({ children }) => {
 
-    const [darkMode, setDarkMode] = useState(false)
+    const [mode, setMode] = useState<string>('light')
 
     useEffect(() => {
         if (localStorage.getItem("mode")) {
-            setDarkMode(true)
+            setMode("dark")
         }
     }, [])
 
     const toggleMode = () => {
-        setDarkMode(!darkMode)
+        setMode(mode === "dark" ? "light" : "dark")
     }
 
-    const data = [darkMode, toggleMode]
+    const data = [mode, toggleMode]
 
     return (
         <ThemeContext.Provider value={data}>
