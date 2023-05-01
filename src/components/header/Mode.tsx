@@ -8,11 +8,11 @@ interface ModeProps {
 
 const Mode: FC<ModeProps> = ({ }) => {
 
-    const [darkMode, toggleMode] = useContext(ThemeContext)
+    const [mode, toggleMode] = useContext(ThemeContext)
 
     const onSetDarkMode = () => {
         toggleMode()
-        if (darkMode) {
+        if (mode) {
             localStorage.removeItem("mode")
         } else {
             localStorage.setItem("mode", "dark")
@@ -21,7 +21,7 @@ const Mode: FC<ModeProps> = ({ }) => {
 
     return (
         <div className="text-gray-300 cursor-pointer">
-            {darkMode ?
+            {mode === 'dark' ?
                 <BsFillBrightnessHighFill
                     className="w-6 h-6 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
                     onClick={onSetDarkMode}

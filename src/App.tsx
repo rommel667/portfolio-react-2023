@@ -1,6 +1,7 @@
 import Hero from "./components/hero/Hero";
 import Layout from "./components/layout/Layout";
 import Projects from "./components/projects/Projects";
+import Technologies from "./components/technologies/Technologies";
 import { ThemeContext } from "./components/theme/Theme"
 
 
@@ -14,7 +15,7 @@ const App = () => {
       <Layout>
         <Hero />
         <Projects />
-        {/* <Technologies /> */}
+        <Technologies />
       </Layout>
     </div>
   );
