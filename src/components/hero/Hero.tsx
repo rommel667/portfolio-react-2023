@@ -8,7 +8,7 @@ interface HeroProps {
 
 const Hero: FC<HeroProps> = ({ }) => {
     return (
-        <section id="home" className="grid md:grid-cols-5 pt-36 md:pt-30 lg:10">
+        <section id="home" className="grid md:grid-cols-5 pt-36 md:pt-20 lg:10">
             <Introduction />
             <BackgroundAnimation />
         </section>

@@ -39,6 +39,14 @@ export const technologies = [
         name: 'Bootstrap',
         color: 'text-indigo-500',
       },
+      {
+        name: 'NextJS',
+        color: '',
+      },
+      {
+        name: 'NestJS',
+        color: '',
+      },
     ],
   },
   {

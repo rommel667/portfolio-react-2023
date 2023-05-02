@@ -15,7 +15,6 @@ const TechGroup: FC<TechGroupProps> = ({ stacks, title }) => {
                 <div className="flex flex-wrap gap-5 space-y-3 mx-auto px-3 pb-5 justify-evenly">
                     {stacks.map(stack => {
                         return (
-
                             <Tech key={stack.name} stack={stack} />
                         )
                     })}
