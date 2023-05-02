@@ -11,7 +11,7 @@ const ImagesCarousel: FC<ImagesCarouselProps> = ({ images }) => {
 
     const [intervals, setIntervals] = useState(3000)
 
-    const onChange = (index: any, item: any) => {
+    const onChange = (_: any, item: any) => {
         setIntervals(item.props["data-interval"]);
     };
 

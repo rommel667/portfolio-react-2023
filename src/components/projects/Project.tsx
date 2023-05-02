@@ -1,7 +1,7 @@
 import { FC, useState, useContext } from 'react'
 import Button from './Button'
 import { ThemeContext } from '../theme/Theme'
-import { ILink, IStack } from '../../interfaces/interface';
+import { IStack } from '../../interfaces/interface';
 import ImagesCarousel from './ImagesCarousel';
 import Modal from './Modal';
 import Icons from './Icons';
@@ -12,11 +12,11 @@ interface ProjectProps {
     description: string;
     images: string[];
     stacks: IStack[];
-    github: ILink[];
-    website?: ILink;
+    // github: ILink[];
+    // website?: ILink;
 }
 
-const Project: FC<ProjectProps> = ({ title, description, images, stacks, github, website }) => {
+const Project: FC<ProjectProps> = ({ title, description, images, stacks }) => {
     const [showButton, setShowButton] = useState(false)
     const [showModal, setShowModal] = useState(false)
     const [mode] = useContext(ThemeContext)

@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import {
-    DiBootstrap, DiCss3, DiFirebase, DiGithubBadge, DiHeroku, DiHtml5, DiJsBadge, DiMongodb, DiPostgresql, DiReact, DiRedis, DiVisualstudio
+    DiBootstrap, DiCss3, DiFirebase, DiGithubBadge, DiHeroku, DiHtml5, DiJsBadge, DiMongodb, DiReact, DiVisualstudio
 } from "react-icons/di";
 
 

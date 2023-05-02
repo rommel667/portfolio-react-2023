@@ -1,8 +1,5 @@
 import { projects } from './project-list'
 import Project from './Project'
-import { IProject } from '../../interfaces/interface'
-
-
 
 const Projects = () => {
     return (

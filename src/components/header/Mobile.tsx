@@ -15,7 +15,7 @@ const Mobile: FC<MobileProps> = ({ }) => {
     return (
         <div className="w-full">
             <Disclosure>
-                {({ open }) => (
+                {() => (
                     <>
                         <div className="flex flex-row items-center justify-between">
                             <Disclosure.Button className="flex focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">

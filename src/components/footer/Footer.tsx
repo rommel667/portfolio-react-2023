@@ -1,15 +1,8 @@
-import { FC } from 'react'
 import GetInTouch from './GetInTouch'
-import Input from '../common/Input'
-import TextArea from '../common/TextArea'
 import ContactInfo from './ContactInfo'
 import Form from './Form'
 
-interface FooterProps {
-
-}
-
-const Footer: FC<FooterProps> = ({ }) => {
+const Footer = () => {
     return (
         <div id="contacts" className="pb-20">
             <div className="text-4xl pt-20 font-semibold text-gray-600 dark:text-gray-200 mb-5">Contacts</div>
