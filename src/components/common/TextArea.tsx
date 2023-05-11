@@ -2,15 +2,20 @@ import { FC } from 'react'
 
 interface TextAreaProps {
     label: string;
+    onChange: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
+    value: string;
 }
 
-const TextArea: FC<TextAreaProps> = ({ label }) => {
+const TextArea: FC<TextAreaProps> = ({ label, onChange, value }) => {
     return (
         <div className="relative mb-3" data-te-input-wrapper-init>
             <textarea
-                className="peer block min-h-[auto] w-full rounded border-0 bg-slate-100 dark:bg-slate-700 px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                onChange={onChange}
+                value={value}
+                required
+                className="peer block min-h-[auto] w-full rounded border-0 bg-slate-100 dark:bg-slate-800 px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                 id="exampleFormControlTextarea1"
-                rows={5}
+                rows={3}
                 placeholder="Your message"></textarea>
             <label
                 htmlFor="exampleFormControlTextarea1"

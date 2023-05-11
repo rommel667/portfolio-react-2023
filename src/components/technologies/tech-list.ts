@@ -43,10 +43,6 @@ export const technologies = [
         name: 'NextJS',
         color: '',
       },
-      {
-        name: 'NestJS',
-        color: '',
-      },
     ],
   },
   {
@@ -61,10 +57,17 @@ export const technologies = [
         color: '',
       },
       {
+        name: 'NestJS',
+        color: '',
+      },
+      {
         name: 'Apollo',
         color: 'text-gray-100',
       },
-
+      {
+        name: 'Prisma',
+        color: '',
+      },
       {
         name: 'MongoDB',
         color: 'text-green-400',

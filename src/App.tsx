@@ -8,6 +8,7 @@ import { Datepicker, Input, initTE } from "tw-elements";
 
 
 import { useContext } from 'react'
+import { Toaster } from 'react-hot-toast';
 
 const App = () => {
   const [mode] = useContext(ThemeContext)
@@ -17,12 +18,13 @@ const App = () => {
   }, []);
 
   return (
-    <div className={`${mode === "dark" ? "dark" : ""}`}>
+    <div className={`${mode}`}>
       <Layout>
         <Hero />
         <Projects />
         <Technologies />
       </Layout>
+      <Toaster />
     </div>
   );
 }
